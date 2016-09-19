@@ -31,7 +31,7 @@
         'content' : '<div class="content page4"><h1>Page4</h1><h2>This is Page4</h2><p>Page4 is pretty awsome</p><div>'
     },
     {
-        'content' : '<div class="content page5"><h1>Page5</h1><h2>This is page5</h2><p>page5 is pretty awsome</p><div>'
+        'content' : '<div class="content page5"><img src="/images/img/sea.jpg"/><div>'
     }];
     var islider = new iSlider({
         data: list,
@@ -39,7 +39,8 @@
         dom: document.getElementById("iSlider"),
         duration: 1000,
         isVertical: true,
-        isLooping: true
+        isLooping: true,
+        animateType: 'rotate'
     });
     //修正iSlide不能触发点击的问题
     // $('body').on("tap",'h1',function(e){
